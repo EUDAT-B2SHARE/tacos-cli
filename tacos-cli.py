@@ -346,6 +346,7 @@ def add_types(
     dry_run,
     dtr_schema_pid
 ):
+    """Add DTR Type information to metadata schema in MSCR."""
     # Read DTR Schema file
     # - Create DTRType for each Type entry in JSON.
     #   "if it has a 'pid' keyword, it is a DTRType object"
@@ -374,6 +375,9 @@ def add_types(
     #       dtr_type = dtr_types_dict[e_without_prefix]
     #       # PATCH dtr_type to https://mscr-test.rahtiapp.fi/datamodel-api/v2/dtr/schema/
     
+    log.critical("Not implemented")
+    return 128
+
     verbosity = Verbosity(verbose)
     mscr_session = requests.Session()
     if mscr_token:
@@ -435,7 +439,7 @@ def fetch_dtr_type(
     log_level,
     output_file
 ):
-    """Fetch DTR Type information and output it."""
+    """Fetch DTR Type information and output it. (NOT IMPLEMENTED)"""
     log.info("This is fetch-dtr-type")
     log.warning("Not implemented")
 
